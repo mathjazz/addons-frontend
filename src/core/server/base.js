@@ -94,7 +94,7 @@ export default function(routes, createStore) {
         const assets = webpackIsomorphicTools.assets();
 
         // Get SRI for deployed services only.
-        const sri = (isDeployed) ? JSON.parse(
+        const sri = isDeployed ? JSON.parse(
           fs.readFileSync(path.join(config.get('basePath'), 'dist/sri.json'))
         ) : {};
 

@@ -2,8 +2,6 @@
 // WARNING: No test/stage/dev/development config should
 // live here.
 
-/* eslint-disable object-shorthand */
-
 const path = require('path');
 const defer = require('config/defer').deferConfig;
 
@@ -19,7 +17,7 @@ if (appName && validAppNames.indexOf(appName) === -1) {
 }
 
 module.exports = {
-  appName: appName,
+  appName,
   basePath: path.resolve(__dirname, '../'),
 
   // 2592000 is 30 days in seconds.
@@ -27,7 +25,7 @@ module.exports = {
   cookieName: 'jwt_api_auth_token',
 
   // The canonical list of enabled apps.
-  validAppNames: validAppNames,
+  validAppNames,
 
   // The node server host and port.
   serverHost: '127.0.0.1',
