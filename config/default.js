@@ -108,10 +108,6 @@ module.exports = {
     disableAndroid: false,
   },
 
-  frameGuard: {
-    action: 'deny',
-  },
-
   supportedLocales: [
     'af', 'ar', 'bg', 'bn-BD', 'ca', 'cs', 'da', 'de', 'dbg', 'dbg-rtl', 'el',
     'en-GB', 'en-US', 'es', 'eu', 'fa', 'fi', 'fr', 'ga-IE', 'he', 'hu', 'id',
